@@ -17,7 +17,7 @@ from diamond.collector import str_to_bool
 
 class LoadAverageCollector(diamond.collector.Collector):
 
-    PROC_LOADAVG = '/proc/loadavg'
+    PROC_LOADAVG = '/host_proc/loadavg'
     PROC_LOADAVG_RE = re.compile(r'([\d.]+) ([\d.]+) ([\d.]+) (\d+)/(\d+)')
 
     def get_default_config_help(self):

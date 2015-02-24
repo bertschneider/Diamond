@@ -22,7 +22,7 @@ except ImportError:
 
 class CPUCollector(diamond.collector.Collector):
 
-    PROC = '/proc/stat'
+    PROC = '/host_proc/stat'
     INTERVAL = 1
 
     MAX_VALUES = {
